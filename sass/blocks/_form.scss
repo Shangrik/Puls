@@ -1,0 +1,39 @@
+.form {
+    width: 300px;
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            padding: 0;
+            border: none;
+        }
+
+        legend {
+            margin-bottom: 5px;
+
+            /* Mobile XS */
+            @media (max-width: 599px) {
+                display: none;
+            }
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 20px 20px;
+        background-color: #fff;
+        margin-bottom: 12px;
+        border: none;
+        border-radius: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            color: #4b4b4b;
+        }
+    }
+}
